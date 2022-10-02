@@ -14,7 +14,7 @@ function App() {
   const getRamdomId = (num)=>Math.floor(Math.random()*num);
   const handleChange = (event)=>{
     if (event.target.value === '') {
-      setSearchUrl()
+      setSearchUrl(location.id)
       setListLocation();
     }else{
       let loc = event.target.value ;
